@@ -1,0 +1,33 @@
+.root {
+  position: relative;
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.content {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.shadow {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.top {
+    top: 0;
+    box-shadow: rgba(16, 22, 26, 0.8) 0 6px 4px -6px inset;
+  }
+
+  &.bottom {
+    bottom: 0;
+    box-shadow: rgba(16, 22, 26, 0.8) 0px -6px 4px -6px inset;
+  }
+}

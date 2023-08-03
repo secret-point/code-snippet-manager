@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--status-bar-height);
+}
+
+.showGutter {
+  width: var(--status-bar-height);
+  height: var(--status-bar-height);
+}
+
+.synchronizationIconContainer {
+  position: relative;
+}
+
+.synchronizationIcon {
+  color: var(--icon-color);
+}
+
+.synchronizationIconStatus {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  border: 1px solid var(--background-color-primary);
+  box-sizing: content-box;
+
+  &.local {
+    background-color: #bfccd6;
+  }
+
+  &.gist {
+    background-color: #3dcc91;
+  }
+}
+
+.languageSelector {
+  text-transform: capitalize;
+}

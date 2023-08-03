@@ -1,0 +1,22 @@
+@import '~normalize.css';
+@import './svg-icon-overrides.scss'; // https://github.com/palantir/blueprint/issues/2976#issuecomment-479231949
+@import '~@blueprintjs/core/src/blueprint.scss';
+@import '~@blueprintjs/popover2/lib/css/blueprint-popover2.css';
+
+html {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+body {
+  overflow: hidden;
+}
+
+input,
+button,
+textarea,
+:focus {
+  outline: none;
+}

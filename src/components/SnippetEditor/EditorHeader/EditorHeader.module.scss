@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: var(--editor-header-height);
+  align-items: center;
+  -webkit-app-region: drag;
+  padding: 0 10px;
+
+  h3 {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+.snippetTitle {
+  width: 100%;
+}

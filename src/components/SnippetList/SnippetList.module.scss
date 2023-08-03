@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color-secondary);
+  border-right: var(--list-container-border);
+  z-index: 10;
+}
+
+.divider {
+  height: 1px;
+  background-image: var(--divider);
+}
+
+.elementEnter {
+  opacity: 0.01;
+  height: 0 !important;
+}
+
+.elementEnter.elementEnterActive {
+  opacity: 1;
+  height: var(--snippet-list-element-height) !important;
+  transition: opacity 150ms ease, height 200ms ease;
+}
+
+.elementExit {
+  opacity: 1;
+  height: var(--snippet-list-element-height);
+}
+
+.elementExit.elementExitActive {
+  opacity: 0.01;
+  height: 0;
+  transition: opacity 150ms ease, height 200ms ease;
+}
