@@ -6,20 +6,20 @@ Automaited home assignment project - A code snippet manager applicatin built wit
 
 # First Run
 
-Install the package dependencies with
-Please use node@14.18.3 to install and start the application.
+- Please use node@14.18.3 to install and start the application.
+- Install the package dependencies
 
 ```
 npm install
 ```
 
-Update the caniuse-lite database with browsers
+- Update the caniuse-lite database with browsers
 
 ```
 npx browserslist@latest --update-db
 ```
 
-Run the application
+- Run the application
 
 ```
 npm start
